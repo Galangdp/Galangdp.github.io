@@ -556,6 +556,38 @@ nav {
 
 
 
+/* Scroll Top */
+
+.scrollup {
+    position: fixed;
+    right: 4rem;
+    bottom: -20%;
+    background-color: black;
+    opacity: 0.8;
+    padding: 0 0.3rem;
+    border-radius: 0.4rem;
+    z-index: 10;
+    transition: 0.4s;
+}
+
+.scrollup:hover {
+    border: 1px solid;
+}
+
+.scrollup__icon {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+
+.show-scroll {
+    bottom: 5rem;
+}
+
+
+
+
+
 
 
 
