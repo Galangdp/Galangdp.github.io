@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Portfolio</title>
 
+  <!-- LOGO -->
+  <link rel="icon" href="/assets/img/logo.svg">
+
   <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -54,9 +57,9 @@
           <li class="nav-item _list-menu d-flex justify-content-end mx-4">
             <a class="nav-link" href="#experience">Experience</a>
           </li>
-          <!-- <li class="nav-item _list-menu d-flex justify-content-end mx-4">
+          <li class="nav-item _list-menu d-flex justify-content-end mx-4">
             <a class="nav-link" href="#contact">Contact</a>
-          </li> -->
+          </li>
           <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Dropdown link
@@ -74,18 +77,21 @@
 
   <section class="home" id="home">
     <div class="_home d-flex align-items-center justify-content-center">
-      <div class="containers">
+      <div class="container">
         <div class="row d-flex align-items-center _home-column">
-          <div class="col-md-6 left d-flex justify-content-center align-items-center">
+          <div class="col-md-6 left d-flex justify-content-center align-items-center" data-aos="fade-right"
+            data-aos-duration="3000">
             <div class="_text-name text-uppercase ">
               <p>Galang Davian</p>
               <p class="_text-bigger">Pradana</p>
               <div class="container d-flex justify-content-center">
-                <a class="btn btn-outline-dark text-dark" href="#about" role="button">Scroll Down <i class="fa-solid fa-arrow-down"></i></a>
+                <a class="btn btn-outline-dark text-dark d-flex justify-content-center align-items-center" href="#about"
+                  role="button">Scroll Down <i class="fa-solid fa-arrow-down mx-2"></i></a>
               </div>
             </div>
           </div>
-          <div class="right home-img col-md-6 d-flex justify-content-center align-items-center">
+          <div class="right home-img col-md-6 d-flex justify-content-center align-items-center" data-aos="fade-left"
+            data-aos-duration="3000">
             <img src="/assets/img/pp.png" class="img-fluid" alt="photo">
           </div>
         </div>
@@ -94,14 +100,15 @@
   </section>
 
   <section class="about" id="about">
-    <div class="container _about d-flex justify-content-center align-items-center flex-column">
+    <div class="container _about d-flex justify-content-center align-items-center flex-column" data-aos="fade-up"
+      data-aos-duration="3000">
       <div class="_about-responsive d-flex justify-content-center align-items-center">
         <p class="_text-still text-capitalize ">hello guys i'm a </p>
         <ul class="_text-walking">
-          <li><span>Student</span></li>
           <li><span>Web Developer</span></li>
           <li><span>Android Developer</span></li>
           <li><span>IOS Developer</span></li>
+          <li><span>Student</span></li>
         </ul>
       </div>
       <p class="_text-info">I became a Programmer when I was 12 years old</p>
@@ -111,193 +118,309 @@
   <section class="experience" id="experience">
     <div class="_experience d-flex justify-content-center align-items-center">
       <div class="container">
-        <p class="_text-title h2 fw-bold">Experience</p>
+        <p class="_text-title fw-bold">Experience</p>
         <span class="_text-subtitle d-block">My technical level</span>
-    
+
         <div class="experience__container container row">
-            <div class="col-md-6">
-                <!--==================== Experience 1 ====================-->
-                <div class="experience__content experience__open">
-                    <div class="experience__header">
-                        <i class="uil uil-brackets-curly experience__icon"></i>
-    
-                        <div>
-                            <h1 class="experience__title">Frontend developer</h1>
-                            <span class="experience__subtitle">More than 4 years</span>
-                        </div>
-    
-                        <i class="uil uil-angle-down experience__arrow"></i>
-                    </div>
-    
-                    <div class="experience__list grid">
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">HTML</h3>
-                                <span class="experience__number">90%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__html"></span>
-                            </div>
-                        </div>
-    
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">CSS</h3>
-                                <span class="experience__number">80%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__css"></span>
-                            </div>
-                        </div>
-    
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">JavaScript</h3>
-                                <span class="experience__number">60%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__js"></span>
-                            </div>
-                        </div>
-    
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">React</h3>
-                                <span class="experience__number">85%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__react"></span>
-                            </div>
-                        </div>
-                    </div>
+          <div class="col-md-6">
+            <!--==================== Experience 1 ====================-->
+            <div class="experience__content experience__open">
+              <div class="experience__header">
+                <i class="uil uil-brackets-curly experience__icon"></i>
+
+                <div>
+                  <h1 class="experience__title">Frontend developer</h1>
+                  <span class="experience__subtitle">More than 4 years</span>
                 </div>
-    
-                <!--==================== Experience 2 ====================-->
-                <div class="experience__content experience__close">
-                    <div class="experience__header">
-                        <i class="uil uil-server-network experience__icon"></i>
-    
-                        <div>
-                            <h1 class="experience__title">Backend developer</h1>
-                            <span class="experience__subtitle">More than 2 years</span>
-                        </div>
-    
-                        <i class="uil uil-angle-down experience__arrow"></i>
-                    </div>
-    
-                    <div class="experience__list grid">
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">PHP</h3>
-                                <span class="experience__number">80%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__php"></span>
-                            </div>
-                        </div>
-    
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">Node Js</h3>
-                                <span class="experience__number">70%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__node"></span>
-                            </div>
-                        </div>
-    
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">Firebase</h3>
-                                <span class="experience__number">90%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__firebase"></span>
-                            </div>
-                        </div>
-    
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">Python</h3>
-                                <span class="experience__number">55%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__python"></span>
-                            </div>
-                        </div>
-                    </div>
+
+                <i class="uil uil-angle-down experience__arrow"></i>
+              </div>
+
+              <div class="experience__list grid">
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">HTML</h3>
+                    <span class="experience__number">90%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__html"></span>
+                  </div>
                 </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">CSS</h3>
+                    <span class="experience__number">80%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__css"></span>
+                  </div>
+                </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">JavaScript</h3>
+                    <span class="experience__number">80%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__js"></span>
+                  </div>
+                </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">React</h3>
+                    <span class="experience__number">60%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__react"></span>
+                  </div>
+                </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">Kotlin</h3>
+                    <span class="experience__number">80%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__kotlin"></span>
+                  </div>
+                </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">Flutter</h3>
+                    <span class="experience__number">70%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__flutter"></span>
+                  </div>
+                </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">Swift</h3>
+                    <span class="experience__number">50%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__swift"></span>
+                  </div>
+                </div>
+
+
+              </div>
             </div>
-    
-            <div class="col-md-6">
-                <!--==================== Experience 3 ====================-->
-                <div class="experience__content experience__close">
-                    <div class="experience__header">
-                        <i class="uil uil-swatchbook experience__icon"></i>
-    
-                        <div>
-                            <h1 class="experience__title">Designer</h1>
-                            <span class="experience__subtitle">More than 5 years</span>
-                        </div>
-    
-                        <i class="uil uil-angle-down experience__arrow"></i>
-                    </div>
-    
-                    <div class="experience__list grid">
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">Figma</h3>
-                                <span class="experience__number">90%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__figma"></span>
-                            </div>
-                        </div>
-    
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">Sketch</h3>
-                                <span class="experience__number">85%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__sketch"></span>
-                            </div>
-                        </div>
-    
-                        <div class="experience__data">
-                            <div class="experience__titles">
-                                <h3 class="experience_name">Photoshop</h3>
-                                <span class="experience__number">85%</span>
-                            </div>
-                            <div class="experience__bar">
-                                <span class="experience__percentage experience__photoshop"></span>
-                            </div>
-                        </div>
-                    </div>
+
+            <!--==================== Experience 2 ====================-->
+            <div class="experience__content experience__close">
+              <div class="experience__header">
+                <i class="uil uil-server-network experience__icon"></i>
+
+                <div>
+                  <h1 class="experience__title">Backend developer</h1>
+                  <span class="experience__subtitle">More than 2 years</span>
                 </div>
+
+                <i class="uil uil-angle-down experience__arrow"></i>
+              </div>
+
+              <div class="experience__list grid">
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">PHP</h3>
+                    <span class="experience__number">80%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__php"></span>
+                  </div>
+                </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">Node Js</h3>
+                    <span class="experience__number">70%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__node"></span>
+                  </div>
+                </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">Firebase</h3>
+                    <span class="experience__number">90%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__firebase"></span>
+                  </div>
+                </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">Python</h3>
+                    <span class="experience__number">55%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__python"></span>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-6">
+            <!--==================== Experience 3 ====================-->
+            <div class="experience__content experience__close">
+              <div class="experience__header">
+                <i class="uil uil-swatchbook experience__icon"></i>
+
+                <div>
+                  <h1 class="experience__title">Designer</h1>
+                  <span class="experience__subtitle">More than 5 years</span>
+                </div>
+
+                <i class="uil uil-angle-down experience__arrow"></i>
+              </div>
+
+              <div class="experience__list grid">
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">Figma</h3>
+                    <span class="experience__number">90%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__figma"></span>
+                  </div>
+                </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">Sketch</h3>
+                    <span class="experience__number">85%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__sketch"></span>
+                  </div>
+                </div>
+
+                <div class="experience__data">
+                  <div class="experience__titles">
+                    <h3 class="experience_name">Photoshop</h3>
+                    <span class="experience__number">85%</span>
+                  </div>
+                  <div class="experience__bar">
+                    <span class="experience__percentage experience__photoshop"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-</section>
+  </section>
 
-<!-- <section class="contact" id="contact">
-  <div class="_contact d-flex justify-content-center align-items-center">
-    <h1>isdfa</h1>
-  </div>
-</section> -->
+  <section class="contact" id="contact">
+    <div class="_contact d-flex justify-content-center align-items-center">
+      <div class="container d-flex justify-content-center align-items-center flex-column">
+        <p class="text-center text-uppercase rounded-pill border px-4 py-2 fw-semibold">
+          Contact Information</p>
+          <form name="submit-to-google-sheet" class="container _form border rounded-3">
+              <div class="my-4 mx-3">
+                <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                <input name="yourName" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name...">
+              </div>
+              <div class="my-4 mx-3">
+                <!-- <label for="exampleFormControlInput1" class="form-label">Email address</label> -->
+                <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Email...">
+              </div>
+              <div class="my-4 mx-3">
+                <!-- <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label> -->
+                <textarea name="feedback" class="form-control " id="exampleFormControlTextarea1" rows="10" placeholder="Feedback or Question"></textarea>
+              </div>
+              <div class="my-4 mx-3 d-flex justify-content-center align-items-center">
+                <input class="_btn-submit btn btn-outline-secondary " type="submit" value="Submit">
+              </div>
+          </form>
+        </div>
+      </div>
 
-  
 
-  <!-- <footer>
+    </div>
+  </section>
 
-  </footer> -->
+
+
+  <footer class="footer">
+
+    <div class="_footer d-flex align-items-center justify-content-center">
+
+      <svg class="_bg-footer" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice" viewBox="24 105 156 95">
+        <rect x="0" y="0" width="300" height="300" fill="#E22227" />
+        <path class="top-outer" fill="#EF8716" stroke="#371300" stroke-width="1"
+          d="M68 1c23,0 67,17 69,39 4,38 5,52 -5,69 -20,36 -68,46 -120,-9 -27,-28 -7,-101 56,-99z" />
+        <path class="top-inner" fill="#537571" stroke="#DCB467" stroke-width="1"
+          d="M69 22c33,-7 52,21 54,37 3,26 -1,28 -8,40 -15,25 -48,25 -85,-14 -19,-20 -4,-53 39,-63z" />
+        <path class="bottom-outer" fill="#DCB467" stroke="#371300" stroke-width="1"
+          d="M158 158c30,13 56,50 44,75 -9,18 -22,46 -42,55 -20,10 -48,2 -73,-19 -29,-25 -27,-55 -9,-79 17,-22 43,-48 80,-32z" />
+        <path class="bottom-inner" fill="#263D56" stroke="#537571" stroke-width="1"
+          d="M136 180c32,-9 45,13 46,29 3,27 8,29 0,42 -14,25 -52,24 -79,0 -21,-18 -2,-61 33,-71z" />
+      </svg>
+
+      <div class="container d-flex justify-content-center align-items-center row mt-5">
+
+        <ul class="icon-button d-flex justify-content-center align-items-center" >
+    
+          <li>
+              <a href="https://github.com/Galangdp">
+                  <i class="uil uil-github"></i>
+              </a>
+          </li>
+    
+          <li>
+              <a href="https://www.linkedin.com/in/galangdavianpradana/">
+                  <i class="uil uil-linkedin"></i>
+              </a>
+          </li>
+    
+          <li>
+              <a href="https://dribbble.com/GalangDavianPradana">
+                  <i class="uil uil-dribbble"></i>
+              </a>
+          </li>
+    
+      </ul>
+    
+        <p class="_text-footer  text-center "><span class="fw-bold">&copy copyright 2022</span> by Galang Davian Pradana. All Right Reserved</p>
+
+      </div>
+
+      
+    </div>
+    
+
+  </footer>
 
   <!-- JS -->
   <script src="/assets/js/index.js"></script>
 
   <script>
     AOS.init();
+  </script>
+
+  <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbw4v2csNpgER2uDPRuQX1Q68FOlSf6W65tvulurTqMv32b1kVsh3cbk8Lhvd3AnUSmtyw/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        form.reset()
+        console.log('Success!', response)
+      })
+      .catch(error => console.error('Error!', error.message))
+  });
   </script>
 </body>
 

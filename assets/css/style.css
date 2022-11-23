@@ -3,15 +3,15 @@
 
 /*==================== VARIABLES CSS ====================*/
 /* :root { */
-    /* --header-height: 3rem; */
+/* --header-height: 3rem; */
 
-    /*========== Colors ==========*/
-    /* Change favorite color */
-    /* --hue-color: 142;  */
-    /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+/*========== Colors ==========*/
+/* Change favorite color */
+/* --hue-color: 142;  */
+/*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-    /* HSL color mode */
-    /* --first-color: hsl(var(--hue-color), 69%, 61%);
+/* HSL color mode */
+/* --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -24,11 +24,11 @@
     --scrooll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scrooll-thumb-color: hsl(var(--hue-color), 12%, 80%); */
 
-    /*========== Font and typography ==========*/
-    /* --body-font: "Poppins", sans-serif; */
+/*========== Font and typography ==========*/
+/* --body-font: "Poppins", sans-serif; */
 
-    /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
-    /* --big-font-size: 2rem;
+/* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+/* --big-font-size: 2rem;
     --h1-font-size: 1.5rem;
     --h2-font-size: 1.25rem;
     --h3-font-size: 1.125rem;
@@ -36,13 +36,13 @@
     --small-font-size: 0.893rem;
     --smaller-font-size: 0.75rem; */
 
-    /*========== Font weight ==========*/
-    /* --font-medium: 500;
+/*========== Font weight ==========*/
+/* --font-medium: 500;
     --font-semi-bold: 600; */
 
-    /*========== Margenes Bottom ==========*/
-    /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
-    /* --mb-0-25: 0.25rem;
+/*========== Margenes Bottom ==========*/
+/* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+/* --mb-0-25: 0.25rem;
     --mb-0-5: 0.5rem;
     --mb-0-75: 0.75rem;
     --mb-1: 1rem;
@@ -51,8 +51,8 @@
     --mb-2-5: 2.5rem;
     --mb-3: 3rem; */
 
-    /*========== z index ==========*/
-    /* --z-tooltip: 10;
+/*========== z index ==========*/
+/* --z-tooltip: 10;
     --z-fixed: 100;
     --z-modal: 1000; */
 /* } */
@@ -70,7 +70,7 @@
     }
 } */
 
-*{
+* {
     /* font-family: 'Poppins', sans-serif; */
     /* background-color: khaki; */
     margin: 0;
@@ -78,13 +78,13 @@
     overflow-x: hidden;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+/* body{
     
-}
+} */
 
 
 
@@ -92,9 +92,9 @@ body{
 
 
 /* NAV */
-nav{
-    font-family: 'Playfair Display', serif; 
-    
+nav {
+    font-family: 'Playfair Display', serif;
+
 }
 
 
@@ -109,20 +109,30 @@ nav{
 
 /* HOME */
 
-._home{
+._home {
     font-family: 'Poppins', sans-serif;
-    width: 100vw ;
+    width: 100vw;
     height: 100vh;
-    background: linear-gradient(
-        to right,
-        #FF8F73 0%,
-        #FF8F73 50%,
-        #FF734F 50%,
-        #FF734F 100%
-    );
+    background: linear-gradient(to right,
+            #FF8F73 0%,
+            #FF8F73 50%,
+            #FF734F 50%,
+            #FF734F 100%);
 }
 
-._text-name p{
+._home a:hover {
+    /* color: white; */
+    /* transition: 0.7s; */
+    /* text-decoration-color: white; */
+    /* color: white; */
+    background-color: transparent;
+    /* opacity: 0.2; */
+    /* transform: translate(-100px, -100px); */
+    border-style: none;
+    /* margin: none; */
+}
+
+._text-name p {
     font-size: 4rem;
     width: fit-content;
     /* text-align: justify;
@@ -131,7 +141,7 @@ nav{
     /* background-color: antiquewhite; */
 }
 
-._text-name p._text-bigger{
+._text-name p._text-bigger {
     font-size: 6rem;
     letter-spacing: .8rem;
 }
@@ -149,31 +159,32 @@ nav{
 /* ABOUT */
 
 /* TEXT WALKING */
-._about{
+._about {
     font-family: 'Poppins', sans-serif;
     background-color: white;
     width: 100vw;
     height: 100vh;
+    overflow-y: hidden;
 }
 
-._about-responsive{
+._about-responsive {
     flex-direction: column;
 }
 
-.container ._text-still{
+.container ._text-still {
     /* color: black; */
     font-size: 2.5rem;
     font-weight: 400;
 }
 
-.container ._text-walking{
+.container ._text-walking {
     margin-left: 0.6rem;
     height: 5.6rem;
     line-height: 5.6rem;
     overflow: hidden;
 }
 
-.container ._text-walking li{
+.container ._text-walking li {
     /* color: black; */
     list-style: none;
     font-size: 3.7rem;
@@ -183,40 +194,43 @@ nav{
     animation: slide 12s steps(4) infinite;
 }
 
-.container ._text-walking li span{
+.container ._text-walking li span {
     position: relative;
     margin: 0.3rem 0;
     line-height: 5.6rem;
 }
 
-.container ._text-walking li span::after{
+.container ._text-walking li span::after {
     position: absolute;
     content: "";
     left: 0;
     width: 100%;
-    height:  100%;
+    height: 100%;
     background: white;
     border-left: 0.1rem solid;
     animation: typing 3s steps(10) infinite;
 }
 
-@keyframes slide{
-    100%{
+@keyframes slide {
+    100% {
         top: -22.5rem;
     }
 }
 
-@keyframes typing{
-    40%, 60%{
+@keyframes typing {
+
+    40%,
+    60% {
         left: calc(100% + 1.8rem);
     }
-    100%{
+
+    100% {
         left: 0;
     }
 }
 
 /* TEXT */
-._text-info{
+._text-info {
     font-size: 1.5rem;
 
 }
@@ -231,12 +245,12 @@ nav{
 
 /* EXPERIENCE */
 
-._experience{
+._experience {
     font-family: 'Poppins', sans-serif;
-    background-color: #6D9886;
+    background-color: #fe8556;
     width: 100vw;
-    height: 100vh;
     padding: 2rem 0 4rem;
+    overflow-y: hidden;
 }
 
 /* ._experience .experience__subtitle, p,  h3{
@@ -248,16 +262,17 @@ nav{
     gap: 1.5rem;
 }
 
-._text-title{
+._text-title {
     font-size: 2.5rem;
 }
 
-._text-subtitle{
+._text-subtitle {
     font-size: 0.875rem;
     margin-bottom: 3rem;
 }
 
-._text-title,._text-subtitle{
+._text-title,
+._text-subtitle {
     text-align: center;
 }
 
@@ -336,11 +351,23 @@ nav{
 }
 
 .experience__js {
-    width: 60%;
+    width: 80%;
 }
 
 .experience__react {
-    width: 85%;
+    width: 60%;
+}
+
+.experience__kotlin{
+    width: 80%;
+}
+
+.experience__flutter{
+    width: 70%;
+}
+
+.experience__swift{
+    width: 50%;
 }
 
 .experience__php {
@@ -397,46 +424,175 @@ nav{
 
 
 /* CONTACT */
-._contact{
+._contact {
     width: 100vw;
-    height: 100vh;
+    margin: 50px 0;
+    /* height: 100vh; */
+}
+
+._contact ._form {
+    width: 70%;
+    height: fit-content;
+}
+
+/* ._contact ._text-contact {
+    width: 20%;
+} */
+
+/* ._contact ._btn-submit{
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+._footer {
+    height: 40vh;
+}
+
+._bg-footer{
+    width: 100vw;
+    position: absolute;
+    height: 40vh;
+    z-index: -1;
+}
+
+._footer p{
+    font-size: 1.2rem;
+}
+
+.icon-button{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    list-style: none;
+  }
+  
+  .icon-button li{
+    margin: 0 20px;
+    transition: .5s;
+    padding: .5rem 1rem;
+    border-radius: 100%;
+  }
+  
+  .icon-button li i{
+    font-size: 2rem;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+  }
+
+  .icon-button li:hover{
+    transform: translateY(-10px);
+    /* background: rgba(0, 0, 0, 0.3); */
+  }
+
+  .uil-linkedin{
+    background: #0077B5;
+  }
+
+
+  
+  .uil-github{
+    background: black;
+  }
+  
+  .uil-dribbble{
+    background-color: #ea4492;
+    /* background: linear-gradient(to top right, #ea4492, #ff9cda); */
+  }
+
+  /* .g{
+    border: 1px solid;
+  }
+
+  .h {
+    padding: 0;
+    margin: 0;
+  } */
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+.top-outer {
+    transform-origin: 73px 69px;
+    animation: rotate 30s linear infinite;
+}
+
+.top-inner {
+    transform-origin: 73px 69px;
+    animation: rotate 20s linear infinite;
+}
+
+.bottom-outer {
+    transform-origin: 134px 222px;
+    animation: rotate 30s linear infinite;
+}
+
+.bottom-inner {
+    transform-origin: 134px 222px;
+    animation: rotate 20s linear infinite;
 }
 
 
+
+
+
+
+
+
+/* Responsive */
+
 @media screen and (max-width: 990px) {
 
-    :root{
+    :root {
         font-size: 13px;
     }
 
-    ._navbar a{
+    ._navbar a {
         font-size: 20px;
     }
 
-    
 
-    ._about-responsive{
+
+    ._about-responsive {
         flex-direction: column;
     }
 
-    ._list-menu{
+    ._list-menu {
         margin-top: 2rem;
         margin-right: 0 !important;
-        padding: 0 ;
+        padding: 0;
     }
 
-    ._home{
-        background: linear-gradient(
-        to top,
-        #FF8F73 0%,
-        #FF8F73 50%,
-        #FF734F 50%,
-        #FF734F 100%
-    );
+    ._home {
+        background: linear-gradient(to top,
+                #FF8F73 0%,
+                #FF8F73 50%,
+                #FF734F 50%,
+                #FF734F 100%);
     }
 
 
-    ._text-name p{
+    ._text-name p {
         font-size: 2rem;
         /* width: fit-content; */
         /* text-align: justify;
@@ -444,8 +600,8 @@ nav{
         margin: 0;
         /* background-color: antiquewhite; */
     }
-    
-    ._text-name p._text-bigger{
+
+    ._text-name p._text-bigger {
         font-size: 2rem;
         letter-spacing: 1.1rem;
     }
@@ -455,62 +611,80 @@ nav{
         height: 1rem;
     } */
 
-    
+
     /* ._content{
         font-size: 1.7rem;
     } */
-    
-    ._text-info{
+
+    ._text-info {
         font-size: 1rem;
-    
+
     }
 
     .container ._text-still {
         row-gap: 1;
     }
 
+    ._contact{
+        margin: 30px 0;
+    }
+
+    ._contact ._form {
+        width: 90%;
+    }
+
+    /* ._footer{
+        height: 10vh;
+    } */
+
+    
+
 }
 
 @media screen and (max-width: 500px) {
 
-    :root{
+    :root {
         font-size: 10px;
     }
 
-    .container ._text-info{
+    .container ._text-info {
         font-size: 13px;
     }
-    
 
-    .container ._text-title{
+
+    .container ._text-title {
         font-size: 25px;
     }
 
-    .container ._text-subtitle{
+    .container ._text-subtitle {
         font-size: 10px;
     }
 
-    .container .experience__title{
+    .container .experience__title {
         font-size: 13px;
     }
 
-    .container .experience__subtitle{
+    .container .experience__subtitle {
         font-size: 10px;
     }
 
     /* .container .experience__name{
         font-size: 15px;
     } */
-    
-    
+
+
 }
 
-@media screen and (max-width: 400px) {
-    :root{
+@media screen and (max-width: 374px) {
+    :root {
         font-size: 8px;
     }
 
-    
+    /* ._footer{
+        height: auto;
+    } */
+
+
 }
 
 
