@@ -116,15 +116,15 @@
   </section>
 
   <section class="experience" id="experience">
-    <div class="_experience d-flex justify-content-center align-items-center">
+    <div class="_experience d-flex justify-content-center align-items-center" data-aos="fade-up" data-aos-duration="3000">
       <div class="container">
-        <p class="_text-title fw-bold" data-aos="fade-down" data-aos-duration="3000">Experience</p>
-        <span class="_text-subtitle d-block" data-aos="fade-down" data-aos-duration="3000">My technical level</span>
+        <p class="_text-title fw-bold">Experience</p>
+        <span class="_text-subtitle d-block">My technical level</span>
 
         <div class="experience__container container row">
           <div class="col-md-6">
             <!--==================== Experience 1 ====================-->
-            <div class="experience__content experience__open" data-aos="fade-right" data-aos-duration="3000">
+            <div class="experience__content experience__open">
               <div class="experience__header">
                 <i class="uil uil-brackets-curly experience__icon"></i>
 
@@ -212,7 +212,7 @@
             </div>
 
             <!--==================== Experience 2 ====================-->
-            <div class="experience__content experience__close" data-aos="fade-right" data-aos-duration="3000">
+            <div class="experience__content experience__close">
               <div class="experience__header">
                 <i class="uil uil-server-network experience__icon"></i>
 
@@ -270,7 +270,7 @@
 
           <div class="col-md-6">
             <!--==================== Experience 3 ====================-->
-            <div class="experience__content experience__close" data-aos="fade-left" data-aos-duration="3000">
+            <div class="experience__content experience__close" >
               <div class="experience__header">
                 <i class="uil uil-swatchbook experience__icon"></i>
 
@@ -321,7 +321,7 @@
   </section>
 
   <section class="contact" id="contact">
-    <div class="_contact d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-duration="3000">
+    <div class="_contact d-flex justify-content-center align-items-center" data-aos="zoom-in" data-aos-duration="1000">
       <div class="container d-flex justify-content-center align-items-center flex-column">
         <p class="text-center text-uppercase rounded-pill border px-4 py-2 fw-semibold">
           Contact Information</p>
@@ -351,8 +351,6 @@
 
     </div>
   </section>
-
-
 
   <footer class="footer">
 
@@ -418,24 +416,7 @@
     AOS.init();
   </script>
 
-  <script>
-    const scriptURL =
-      'https://script.google.com/macros/s/AKfycbw4v2csNpgER2uDPRuQX1Q68FOlSf6W65tvulurTqMv32b1kVsh3cbk8Lhvd3AnUSmtyw/exec'
-    const form = document.forms['submit-to-google-sheet']
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, {
-          method: 'POST',
-          body: new FormData(form)
-        })
-        .then(response => {
-          form.reset()
-          console.log('Success!', response)
-        })
-        .catch(error => console.error('Error!', error.message))
-    });
-  </script>
+  
 </body>
 
 </html>
